@@ -1,0 +1,177 @@
+.home{
+    background-image: url(../images/adminBlock.jpg) ;
+    height: 100vh;
+    width: 100vw;
+    background-position: fixed;
+    background-size: cover;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.226);
+    z-index: 1; 
+}
+
+
+.link-a{
+    color: black;
+}
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: 9999; 
+
+}
+.navBar{
+    background-color:transparent ;
+    height: 60px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.home h1{
+    color: aqua;
+    z-index: 2;
+    font-size: 50px;
+}
+.home h2{
+    color: yellow;
+    z-index: 2;
+    font-size: 80px;
+
+}
+.home h3{
+    color: aqua;
+    z-index: 2;
+    font-size: 40px;
+}
+
+
+
+
+/* -----------------------about styling ------------------- */
+.about {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+    gap: 30px;
+}
+
+.about_content img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 70px;
+}
+
+.about_content p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    padding: 20px;
+}
+.name_logo{
+color: white;
+}
+
+
+
+
+/* Navbar Scrolled Style */
+.nav-bar.sticky-top {
+    background-color: white;
+}
+
+.nav-bar.sticky-top .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.nav-bar.sticky-top .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: black;
+}
+
+.nav-bar.sticky-top .navbar-brand .icon img {
+    filter: invert(100%);
+}
+
+
+@media (max-width:768px) {
+    .home{
+        background-position: center;
+        text-align: center;
+    }
+    .home h1{
+        font-size: 30px;
+    }
+    .home h2{
+        font-size: 45px;
+    }
+    .home h3{
+        font-size: 30px;
+    }
+    .hide_phone{
+        display: none;
+    }
+    .about_content img{
+        max-width: 95vw;
+        height: 400px;
+        margin-left: 0;
+    }
+    #navbarCollapse{
+        background: white;
+        min-width: 100vw;
+        height: 100%;
+        margin: 0;
+        
+    }
+    .nav-bar{
+        background-color: white;
+    }
+    
+    .nav-bar .navbar-nav .nav-item .nav-link {
+        color: black;
+    }
+    
+    .nav-bar.sticky-top .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+        color: black;
+    }
+    
+    .nav-bar .navbar-brand .icon img {
+        filter: invert(100%);
+    }
+    .dropdown-menu{
+        text-align: center;
+        border: none;
+    }
+    .dropdown-menu a::before{
+        content: "•";
+     
+    }
+
+}
